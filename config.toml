@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "STA 112FS"
+title = "USP 654 Fall 2017"
 theme = "material"
 #disqusShortname = ""
 # googleAnalytics = ""
@@ -20,14 +20,14 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   archive = "archives"
 
 [author]
-  name = "Mine Cetinkaya-Rundel"
+  name = "Liming Wang"
   bio = ""
-  job = "Associate Professor of the Practice"
-  location = "Duke University"
-  gravatarEmail = "mine@stat.duke.edu"
+  job = "Assistant Professor"
+  location = "Portland State University"
+  gravatarEmail = "lmwang@pdx.edu"
   # Your profile picture
 #  picture = ""
-  twitter = "minebocek"
+  twitter = ""
  
 # Menu Configuration
 [[menu.main]]
@@ -63,30 +63,25 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[menu.footer]]
   weight = 1
-  identifier = "Duke"
-  name = "Duke StatSci"
+  identifier = "D2L"
+  name = "D2L@pdx"
   pre = "<i class=\"button-icon fa fa-2x fa-map-marker\"></i>"
-  url = "http://stat.duke.edu/"
-[[menu.footer]]
-  weight = 2
-  name = "R/RStudio"
-  pre = "<i class=\"icon-rlogo\" style=\"font-size:150%\"></i>"
-  url = "https://vm-manage.oit.duke.edu/"
+  url = "http://d2l.pdx.edu/"
 [[menu.footer]]
   weight = 3
   identifier = "GitHub"
   name = "GitHub"
   pre = "<i class=\"button-icon fa fa-2x fa-github\"></i>"
-  url = "https://github.com/Sta112-F17/"
+  url = "https://github.com/usp654/"
 [[menu.footer]]
   weight = 4
   identifier = "Slack"
   name = "Slack"
   pre = "<i class=\"button-icon fa fa-2x fa-slack\"></i>"
-  url = "https://sta112f17.slack.com/messages"
+  url = "https://usp634f17.slack.com/messages"
 
 
 [params]
   dateFormat = "January 2, 2006"
-  background = "http://www2.stat.duke.edu/courses/Fall17/sta112.01/img/mugesketch.png"
-  favicon = "img/favicon.ico"
+  background = ""
+  favicon = ""

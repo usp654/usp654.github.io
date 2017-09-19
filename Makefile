@@ -1,15 +1,16 @@
-REMOTEUSER ?= mc301
-HOST ?= okeeffe.stat.duke.edu
-DIR ?= /web/isds/docs/courses/Fall17/sta112.01
-REMOTE ?= $(REMOTEUSER)@$(HOST):$(DIR)
 
-.PHONY: clean
-clean:
-	rm -rf docs/*
+.PHONY: build
+build:
+	R -e 'blogdown::build_site()'
 
 push:
-	cp favicon.ico docs/
-	rsync -azv --delete  --exclude='.DS_Store'  docs/ $(REMOTE)
+	git commit -a -m"Updated course webiste"
+	git push
+
+publish:
+	cd docs
+	git commit -a -m"Updated course webiste"
+	git push
 
 unbind:
 	lsof -wni tcp:4000

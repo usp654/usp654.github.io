@@ -3,11 +3,12 @@
 build:
 	R -e 'blogdown::build_site()'
 
-push:
+push: build
+	git status && \
 	git commit -a -m"Updated course webiste" && \
 	git push
 
-publish:
+publish: build
 	cd docs && \
 	git commit -a -m"Updated course webiste" && \
 	git push

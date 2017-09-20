@@ -1,6 +1,6 @@
 ---
-title: "USP654: Data Analysis II "
-description: ". Prerequisite: USP634 or equivalent."
+title: "USP654: Data Analysis II"
+description: "Combines techniques from statistics, math, computer science, and social sciences, to learn how to use data to understand natural phenomena, explore patterns, model outcomes, and make predictions. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, data visualization, and effective communication of results. Discussions around reproducibility, data sharing, data privacy. Focus on the R statistical computing language. Prerequisite: USP634 or equivalent."
 markup: "mmark"
 ---
 

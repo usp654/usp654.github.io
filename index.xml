@@ -26,8 +26,8 @@
       <pubDate>Thu, 13 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>/policies/</guid>
-      <description>Class: To be written
-Grading: To be written</description>
+      <description>Grading: 3 homework assignments and the class project+paper will make up your entire grade in the course. I use these grading cutoffs:
+ A=90% B=80% C=70% D=60% F&amp;lt;60%  Structure The course meeting will be divided between lecture and lab. Labs will focus on building skills with two statistical packages commonly used in the social sciences: SPSS and R (*assuming there is student demand for each). I will not be able to teach the software in depth in this course, but I will provide sufficient instructions to complete all homework tasks with either software.</description>
     </item>
     
     <item>
@@ -36,9 +36,8 @@ Grading: To be written</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tools/</guid>
-      <description>Tools R/RStudio R is the statistical programming language we will learn in this class. We will interface with R using RStudio, a fully feautred IDE. Go to https://www.rstudio.com/products/rstudio/download/#download to download and install RStudio.
-Data Camp To be written
-Slack Slack is the communication platform we&amp;rsquo;ll use for this course. You should have received an email with an invitation link to join the course Slack. All content related course communication will happen on Slack, in the relevant channels.</description>
+      <description>Tools R/RStudio R is the statistical programming language we will use in this class. We will interface with R using RStudio, a fully feautred IDE. Installing them on your own computer should be straightforward. If you already have them installed on your computer, I recommend you check the version and upgrade them to the latest version. Ask me for help if you have any problem installing them.
+ Download and install R 3.</description>
     </item>
     
   </channel>

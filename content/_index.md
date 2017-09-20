@@ -1,6 +1,6 @@
 ---
 title: "USP654: Data Analysis II"
-description: "Combines techniques from statistics, math, computer science, and social sciences, to learn how to use data to understand natural phenomena, explore patterns, model outcomes, and make predictions. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, data visualization, and effective communication of results. Discussions around reproducibility, data sharing, data privacy. Focus on the R statistical computing language. No computing background necessary."
+description: "Combines techniques from statistics, math, computer science, and social sciences, to learn how to use data to understand natural phenomena, explore patterns, model outcomes, and make predictions. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, data visualization, and effective communication of results. Discussions around reproducibility, data sharing, data privacy. Focus on the R statistical computing language. Prerequisite: USP634 or equivalent."
 markup: "mmark"
 ---
 
@@ -30,6 +30,6 @@ OpenIntro Data Science (link TBA) | Çetinkaya-Rundel | In progress
 [R for Data Science](http://r4ds.had.co.nz/) | Grolemund, Wickham | O'Reilly, 1st edition, 2016
 [OpenIntro Statistics](https://www.openintro.org/stat/textbook.php?stat_book=os) | Diez, Barr, Çetinkaya-Rundel | CreateSpace, 3rd Edition, 2015
 
-### Materials
+### Hardware
 
-You should have access to a laptop and bring it to every class, fully charged.
+Class meets in CUPA computer lab URBN 225; you are welcome to bring and use your own laptop (Windows, Mac, or Linux).

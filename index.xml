@@ -31,12 +31,14 @@ Grading: To be written</description>
     </item>
     
     <item>
-      <title>Tools</title>
+      <title>Tools &amp; Datasets</title>
       <link>/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tools/</guid>
-      <description>R/RStudio     GitHub     Slack    R is the statistical programming language we will learn in this class. We will interface with R using RStudio, a fully feautred IDE. Go to https://vm-manage.oit.duke.edu/ to access RStudio and log in with your Net ID.    GitHub is a web-based version control repository and Internet hosting service. We will be using GitHub in this course as a collaboration platform and a course management system (i.</description>
+      <description>Tools R/RStudio R is the statistical programming language we will learn in this class. We will interface with R using RStudio, a fully feautred IDE. Go to https://www.rstudio.com/products/rstudio/download/#download to download and install RStudio.
+Data Camp To be written
+Slack Slack is the communication platform we&amp;rsquo;ll use for this course. You should have received an email with an invitation link to join the course Slack. All content related course communication will happen on Slack, in the relevant channels.</description>
     </item>
     
   </channel>

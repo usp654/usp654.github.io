@@ -10,7 +10,7 @@ markup: "mmark"
 - Download and install R 3.4.1 from https://ftp.osuosl.org/pub/cran/ for your operating system. (Requires administrator privellege)
 - Download and install RStudio Desktop free version from https://www.rstudio.com/products/rstudio/download/
 
-### Data Camp
+### DataCamp
 
 [DataCamp](https://www.datacamp.com/groups/usp654-data-analysis-2/) is an online service with dozens of self-paced, interactive courses on using R and Python for data analysis. Students in this course have free premium access to DataCamp courses, which are a good resource to learn R along with data analysis skills.
 

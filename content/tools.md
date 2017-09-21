@@ -1,9 +1,10 @@
 ---
 title: Tools & Datasets
+markup: "mmark"
 ---
 
 ## Tools
-### R/RStudio
+### R + RStudio
 [R](https://cran.r-project.org) is the statistical programming language we will use in this class. We will interface with R using [RStudio](https://www.rstudio.com), a fully feautred IDE. Installing them on your own computer should be straightforward. If you already have them installed on your computer, I recommend you check the version and upgrade them to the latest version. Ask me for help if you have any problem installing them.
 
 - Download and install R 3.4.1 from https://ftp.osuosl.org/pub/cran/ for your operating system. (Requires administrator privellege)

@@ -34,7 +34,7 @@
           <i class="fa fa-keyboard-o fa-lg"></i></font></td>
       {{ end }}
       
-      {{ if .slides }}
+      {{ if .lecture }}
       <td align="center"><a href="{{ .Site.baseurl }}/lecture/{{ .lecture  }}">
           <i class="fa fa-file-image-o  fa-lg"></i></a></td>
       {{ else }}
@@ -42,7 +42,7 @@
           <i class="fa fa-file-image-o  fa-lg"></i></font></td>
       {{ end }}
       
-      {{ if .exam }}
+      {{ if .lab }}
       <td align="center"><a href="{{ .Site.baseurl }}/lab/{{ .lab }}">
           <i class="fa fa-check-circle fa-lg"></i></a></td>
       {{ else }}

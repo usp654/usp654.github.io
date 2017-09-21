@@ -11,7 +11,7 @@ markup: "mmark"
 ------------|---------------------------------------------
 When        |  Mon 4:00 - 7:30pm                         |
 Where       |  URBN 225                                  |
-Office Hours|  Mon 3 - 4pm & by appointment at URBN 350D |
+Office Hours|  [Mon 2 - 4pm & by appointment](https://calendar.google.com/calendar/selfsched?sstoken=UUlwWnNVMTFpNHBGfGRlZmF1bHR8NDA1NGM4OTVlYTI4NjA0MGFhNjlhNDliMWZlNWY4YmU) at URBN 350D |
 
 ### Instructor
 {.table .table-condensed .table-striped .text-left}
@@ -41,3 +41,8 @@ It is possible to use your choice of other stats software, such as SAS, SPSS, or
 ### Hardware
 
 Class meets in CUPA computer lab URBN 225; you are welcome to bring and use your own laptop (Windows, Mac, or Linux). Check out the [Tools and Datasets](/tools) section for instructions of installing necessary software on your own computer.
+
+### Attributions
+
+- This course website is adapted from [STA 112FS by Mine Çetinkaya-Rundel at Duke University](http://www2.stat.duke.edu/courses/Fall17/sta112.01/), which in turn is based on [ESPM-157 by Carl Boettinger](https://espm-157.carlboettiger.info/).
+- Background photo [*Portland at Dusk* by Alejandro Rdguez on flickr](https://www.flickr.com/photos/90642235@N04/19400834865/)

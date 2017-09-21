@@ -13,15 +13,10 @@ markup: "mmark"
 - D=60% 
 - F<60%
 
-###	Structure
-
-The course meeting will be divided between lecture and lab. Labs will focus on building skills with two statistical packages commonly used in the social sciences: SPSS and R (*assuming there is student demand for each). I will not be able to teach the software in depth in this course, but I will provide sufficient instructions to complete all homework tasks with either software. If you are already familiar with some other statistics package (e.g. Stata, SAS, Shazam, Biogeme, NLogit), you should feel free to use it, though I’ll be less able to help with those I’m unfamiliar with. Something to keep in mind is that R is free software that you can install on your own computer and will read SPSS datasets. My suggestion would be to ask your graduate adviser and/or GRA supervisor which would be most useful for you, and use it. You can always learn the other alongside it, or follow one of the many excellent tutorials later.
-
-
 ###	Notes
 
-1. If my office hours conflict with your schedule, see me for an appointment, or try to catch me in my office.
-1. Homework may be handed in during class or to my faculty mailbox in Urban 350. 
+1. If my office hours conflict with your schedule, [send me a Google calendar invite for an appointment](https://docs.google.com/document/d/1bzErTafR_yILhhwW-1jax_0XiHZZE-HU-tT40Ur0blQ/edit).
+1. Submit in your homework assignments to [D2L/Assignments](https://d2l.pdx.edu/d2l/lms/dropbox/user/folders_list.d2l?isprv=1&bp=1&ou=667907). 
 1. Extensions on homework due dates will only be granted in exceptional circumstances and only if I am contacted before the due date.
 1. Academic dishonesty will result in a score of zero for the assignment in question. 
 1. Please be aware of the University’s policies on withdrawals and incompletes:
@@ -36,5 +31,3 @@ If you have a disability and need academic accommodations, please let me know ea
 ###	Title IX reporting obligations
 
 As an instructor, one of my responsibilities is to help create a safe learning environment for my students and for the campus as a whole. Please be aware that as a faculty member, I have the responsibility to report any instances of sexual harassment, sexual violence and/or other forms of prohibited discrimination. If you would rather share information about sexual harassment, sexual violence or discrimination to a confidential employee who does not have this reporting responsibility, you can find a list (http://www.pdx.edu/sexual-assault/get-help) of those individuals. For more information about Title IX please complete the required student module Creating a Safe Campus in your D2L.
-
-

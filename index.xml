@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>USP654: Data Analysis II on USP 654 Fall 2017</title>
+    <title>Data Analysis II on USP 654 Fall 2017</title>
     <link>/</link>
-    <description>Recent content in USP654: Data Analysis II on USP 654 Fall 2017</description>
+    <description>Recent content in Data Analysis II on USP 654 Fall 2017</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/syllabus/</guid>
-      <description>Note: Due dates of bigger assignments and exams will not move, however the timeline of topics might be updated throughout the semester.  Date Lesson Reading Assignment Lecture Lab    Part 1       Mon, September 25 Overview       Mon, Oct 2 Introduction to R/RStudio       </description>
+      <description>Note: Due dates of bigger assignments and exams will not move, however the timeline of topics might be updated throughout the semester.  Date Lesson Reading Assignment Lecture Lab    Part 1: Introduction &amp;amp; Data Analysis Workflow       09/25 Introduction and Data Analysis Workflow        Part 2: Linear Regression       10/02 Bivariate Regression       10/09 DEADLINE: Project proposal       10/09 Multiple Regression       10/16 Dummy Variables       10/23 Interactions       10/30 Nonlinear Relationships       11/06 DEADLINE: Project update       11/06 Indirect Effects and Omitted Variable Bias       11/13 Outliers, Heteroskedasticity, and Multicollinearity       11/13 DEADLINE: Assignment 2        Part 3: Generalized Linear Models       11/20 Generalized Linear Models I       11/27 Generalized Linear Models; Where to go next       12/4 DEADLINE: Project Presentation       12/8 DEADLINE: Project Report       </description>
     </item>
     
     <item>

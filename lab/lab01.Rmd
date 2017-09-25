@@ -41,6 +41,13 @@ library(tidyverse)
 
 ## [Import Data](http://cities.github.io/datascience/import.html)
 
+## Tasks
+
+1. Create a new RStudio project and create directory structure following the recommendation in [Project Management With RStudio](http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/)
+1. Select a dataset from the [Tools and Datasets] section of the course website, save the dataset in the data folder of your project
+1. Famarlize yourself with your dataset with the data document;
+1. Create a script that imports your dataset into R and explores it with descriptive statistics and/or visulization.
+
 ## Resources
 - [Introduction to R on Data Camp](https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=1): A self-instruction course covering R basics.
 - [R coding basics on Software Carpentry](http://swcarpentry.github.io/r-novice-gapminder/), hands-on tutorial on R basics, lesson 4-11.

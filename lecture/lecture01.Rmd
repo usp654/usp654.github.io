@@ -14,6 +14,7 @@ output:
 ```{r setup, include=F}
 knitr::opts_chunk$set(message=FALSE, warning=F, echo=F)
 options(width = 2000)
+options(repos="https://cran.rstudio.com")
 ```
 
 # Outline

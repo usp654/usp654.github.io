@@ -47,7 +47,7 @@ library(tidyverse)
 
 ## Import Data
 
-1. Download the data file for this lab from [here](lab/mtcars.csv) and save it to data directory of your RStudio project.
+1. Download the data file for this lab from [here](mtcars.csv) and save it to data directory of your RStudio project.
 2. What format is the data file in?
 3. Import the data in the file into R as a data frame:
 

@@ -1,0 +1,8 @@
+---
+title: 'USP654 HW3'
+author: "Liming Wang"
+date: "11/13/2017"
+output: html_document
+---
+
+TO BE ASSIGNED

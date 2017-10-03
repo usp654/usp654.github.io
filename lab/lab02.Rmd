@@ -30,6 +30,8 @@ More details of the best practice of [Project Management With RStudio](http://sw
 
 ## R Package
 
+To install R packages on to the computers in the lab, you will need to down the [.Rprofile](.Rprofile) file (Save link as...) and save it to your Documents folder.
+
 One of the advantages of R is the thousands packages that extend the functionailities of base R. A major part of learning R is to learn to work with R packages. Besides the base R, we will use a suite of packages named [`tidyverse`](https://www.tidyverse.org/) that covers the whole process of data analysis. To install the `tidyverse` packages, you can use the **Packages** pane or run R function in RStudio's **Console** pane: 
 
 ```{r, eval=FALSE}

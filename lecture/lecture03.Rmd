@@ -1,0 +1,193 @@
+---
+title: "USP654: Data Analysis II"
+subtitle: "Multiple Regression"
+author: "Liming Wang"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  xaringan::moon_reader:
+    css: "example.css"
+    self_contained: true
+    seal: yes
+    nature:
+      highlightStyle: github
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(message=FALSE, warning=F, echo=F)
+options(width = 2000)
+options(repos="https://cran.rstudio.com")
+```
+
+# Outline
+
+- PRL vs SRL
+- Multiple Regression
+   - Population Regression Model
+   - OLS estimate of Multiple Regression
+   - General Linear F Test
+
+---
+
+# PRL vs SRL 2
+PRL for a hypothetic population with 1000 observations:
+```{r, echo=F}
+library(ggplot2)
+library(tidyverse)
+
+X <- runif(1000, min=0, max=1)
+epsilon <- rnorm(1000, mean=0, sd=1)
+beta0 <- 1
+beta1 <- 5
+Y <- beta0 + beta1 * X + epsilon
+
+xy_df <- data_frame(X=X, Y=Y, epsilon=epsilon)
+
+ggplot(data=xy_df, aes(x=X, y=Y)) + geom_point() + geom_smooth(method="lm", se=F)
+```
+
+---
+
+# PRL vs SRL 3
+
+SRL with 100 random samples:
+
+```{r, echo=F}
+library(texreg)
+sample_df <- xy_df %>% sample_n(100)
+
+ggplot(data=sample_df, aes(x=X, y=Y)) + geom_point() + geom_smooth(method="lm", se=F)
+```
+
+---
+
+# PRL vs SRL 4
+
+SRL with 100 random samples:
+
+```{r, echo=F, results="asis"}
+lm(Y ~ X, data=sample_df) %>% 
+  htmlreg()
+```
+
+---
+
+# PRL vs SRL 5
+
+Repeat sampling with 100 observations:
+
+```{r, echo=F}
+require(broom)
+require(gridExtra)
+sample_betas <- data_frame(data=list(xy_df)) %>% 
+  crossing(data_frame(rep=1:200)) %>% 
+  mutate(sample=map(data, ~sample_n(.x, 100)),
+         yxlm=map(sample, ~lm(Y ~ X, data=.x)),
+         lmtidy=map(yxlm, tidy),
+         intercept = map_dbl(lmtidy, ~.x[1, "estimate"]),
+         slope = map_dbl(lmtidy, ~.x[2, "estimate"])
+         ) 
+  
+grid.arrange(
+  ggplot(sample_betas, aes(x=intercept)) + geom_density(),
+  ggplot(sample_betas, aes(x=slope)) + geom_density(),
+  ncol=2
+)
+```
+
+---
+
+# Multiple Regression: Population Regression Model
+
+$$\text{Y}_i = \beta_0 + \beta_1 \text{X}_{1i} + \beta_2 \text{X}_{2i} + \epsilon_i, where \epsilon_i \sim N(0, \sigma)$$, 
+$$\text{E}(Y_i|\text{X}_{1i}, \text{X}_{2i}) = \beta_0 + \beta_1 \text{X}_{1i} + \beta_2 \text{X}_{2i}$$
+
+---
+
+# Multiple Regression: Intercept
+
+Substituting X1=0 and X2=0 into the equation for the conditional mean leads to all the terms dropping out of the right hand side of the equation except for the intercept.  
+
+$$\text{E}(Y_i|\text{X}_{1i}=0, \text{X}_{2i}=0) = \beta_0 + \beta_1 * 0 + \beta_2 * 0 = \beta_0$$
+
+---
+
+# Multiple Regression: Slope
+
+We can see that:
+- If we hold one predictor variable constant at a particular level, then that value is subsumed into the intercept.
+- And, the change in Y when we change the other predictor by 1 is equal to that other predictor’s coefficient.
+
+$$\text{E}(Y_i|\text{X}_{1i}=m, \text{X}_{2i}) = \beta_0 + \beta_1 * m + \beta_2 * \text{X}_{2i} = (\beta_0 + \beta_1 * m) + \beta_2 * \text{X}_{2i}$$
+
+---
+
+# Multiple Regression: Visually 1
+
+![regression plane](img/multiple_regression_plane.png)
+
+---
+
+# Multiple Regression: Visually 2
+
+![regression conditional X1](img/multiple_regression_X1conditional.png)
+
+---
+
+# Multiple Regression: Visually 3
+
+![regression conditional X2](img/multiple_regression_X2conditional.png)
+
+---
+
+# OLS Estimation of the Multiple Regression Model
+
+$${\text{Y}}_i = \hat{\beta}_0 + \hat{\beta}_1 \text{X}_{1i} + \hat{\beta}_2 \text{X}_{2i} + \hat{\epsilon}_i$$
+$$\hat{\text{Y}}_i = \hat{\beta}_0 + \hat{\beta}_1 \text{X}_{1i} + \hat{\beta}_2 \text{X}_{2i}$$
+
+Find $\beta$'s that minimizes:
+
+$$\sum{\hat{\epsilon}_i^2} = \sum{(Y_i - \hat{Y}_i)^2} = \sum{(Y_i - (\hat{\beta}_0 + \hat{\beta}_1 \text{X}_{1i} + \hat{\beta}_2 \text{X}_{2i}))}^2 $$
+
+---
+
+# Standard Errors of the Slopes
+
+![se betas](img/fig_se_betas.png)
+
+---
+
+# General Linear F Test
+
+Multiple regression also introduces the possibility of making joint tests about more than one slope at the same time.  
+- is at least one of the slopes in the model significant? 
+- Is at least one of the slopes in a sub-set of the predictors significant (for instance, at least one of the adult’s characteristics and at least one of the mother’s characteristics in our distance example)? 
+- Do two slope coefficients differ from one another?  
+
+---
+
+# Decomposing Sum of Squares - 1
+
+![decompose SS1](img/fig_decompose_SS1.png)
+
+---
+
+# Decomposing Sum of Squares - 2
+
+![decompose SS2](img/fig_decompose_SS2.png)
+
+---
+
+# Nested Models
+
+- The General Linear F test can be used to compare any two models that are nested.
+- Models are nested whenever one model can be produced by placing constraints on the coefficients of another model. 
+
+Which of the following models are nested?
+
+![nested models](img/fig_nested-models.png)
+
+---
+
+# Steps for General Linear F Test
+
+![F test steps](img/fig-F-test_steps.png)

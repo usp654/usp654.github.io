@@ -6,6 +6,7 @@ date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output:
   xaringan::moon_reader:
     css: "example.css"
+    self_contained: true
     seal: yes
     nature:
       highlightStyle: github

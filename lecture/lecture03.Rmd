@@ -146,7 +146,7 @@ $$\hat{\text{Y}}_i = \hat{\beta}_0 + \hat{\beta}_1 \text{X}_{1i} + \hat{\beta}_2
 
 Find $\beta$'s that minimizes:
 
-$$\sum{\hat{\epsilon}_i^2} = \sum{(Y_i - \hat{Y}_i)^2} = \sum{(Y_i - (\hat{\beta}_0 + \hat{\beta}_1 \text{X}_{1i} + \hat{\beta}_2 \text{X}_{2i}))}^2 $$
+$$\sum{\hat{\epsilon}_i^2} = \sum{(Y_i - \hat{Y}_i)^2} = \sum{(Y_i - (\hat{\beta}_0 + \hat{\beta}_1 \text{X}_{1i} + \hat{\beta}_2 \text{X}_{2i}))^2}$$
 
 ---
 

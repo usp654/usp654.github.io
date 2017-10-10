@@ -57,6 +57,7 @@ Please submit your assignment to D2L by 10/23. Feel free to work together, but t
 	  
 1. Choose ONE of the articles included in the folder to read. In 2-3 paragraphs, briefly describe the primary research question(s), research hypotheses, and experimental design of the study; then, choose ONE of the presented models and interpret the results. Include in your interpretation discussions of significance and effect size. Also include your own critique in terms of the modeling and interpretation. Make a case for one additional continuous explanatory/control variable and one discrete/dummy variable the authors could perhaps have included. 
 
-Please note the below points for your chosen study (Both paper available on D2L):
-	 - [Baskin et al. (Physical Activity Correlates)](https://link.springer.com/article/10.1007%2Fs12160-012-9437-7) - Paper states that standardized coefficients listed in Tables 2 & 3, but they are actually unstandardized (i.e. in original variable units). Also ignore typo where states “logistic regression” was run. All models are in fact classical linear regression.
-	 - [Lund (Pedestrian environments & community)](http://journals.sagepub.com/doi/abs/10.1177/0739456X0202100307) - Don’t worry about “Hierarchical Linear Model” (HLM); this is just a term for adding variables to a linear regression in groups and doesn’t impact the estimation or interpretation of results.
+    Please note the below points for your chosen study (Both paper available on D2L):
+  
+    - [Baskin et al. (Physical Activity Correlates)](https://link.springer.com/article/10.1007%2Fs12160-012-9437-7) - Paper states that standardized coefficients listed in Tables 2 & 3, but they are actually unstandardized (i.e. in original variable units). Also ignore typo where states “logistic regression” was run. All models are in fact classical linear regression.
+    - [Lund (Pedestrian environments & community)](http://journals.sagepub.com/doi/abs/10.1177/0739456X0202100307) - Don’t worry about “Hierarchical Linear Model” (HLM); this is just a term for adding variables to a linear regression in groups and doesn’t impact the estimation or interpretation of results.

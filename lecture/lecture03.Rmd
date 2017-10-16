@@ -203,7 +203,7 @@ $R^2_a=1 - \frac{SSE/(n-k)}{TSS/(n-1)}$
 # R-Squared - Bivariate regression
 
 $correlation(mpg, wt) = with(mtcars, cor(mpg, wt)) =$ `r with(mtcars, cor(mpg, wt))`
-$correlation(mpg, wt)^2$ = `r with(mtcars, cor(mpg, wt))`$^2$= `r with(mtcars, cor(mpg, wt))^2`
+$correlation(mpg, wt)^2$ = `r with(mtcars, cor(mpg, wt))` $^2$= `r with(mtcars, cor(mpg, wt))^2`
 
 ```{r, echo=TRUE}
 lm(mpg ~ wt, data=mtcars) %>% summary
@@ -263,6 +263,8 @@ anova(lm_mpg_wt, lm_mpg_wt.cyl)
 anova(lm_mpg_int, lm_mpg_wt, lm_mpg_wt.cyl)
 
 ```
+
+---
 
 # General Linear F Tests in action
 

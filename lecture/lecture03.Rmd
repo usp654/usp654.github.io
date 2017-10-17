@@ -131,7 +131,7 @@ $$\text{E}(Y_i|\text{X}_{1i}=m, \text{X}_{2i}) = \beta_0 + \beta_1 * m + \beta_2
 
 ---
 
-# Multiple Regression: Visually 1
+# Visualize Multiple Regression
 
 `mpg` model with the `mtcars` dataset: $\text{mpg}_i = \beta_0 + \beta_1 \text{wt}_i + \beta_2 * \text{cyl}_i + \epsilon_i$
 
@@ -153,13 +153,12 @@ ggPredict(fit, interactive=TRUE, colorn=3, colorAsFactor=TRUE)
 
 ---
 
-# Multiple Regression: Visually 2
+3D representation of $\text{mpg}_i = \hat{\beta_0} + \hat{\beta_1} \text{wt}_i + \hat{\beta_2} \text{cyl}_i$ 
 
-```{r}
-ggPredict3d(fit, interactive=TRUE, colorn=3)
+```{r, warning=FALSE, echo=FALSE, fig.height=6}
+ggPredict3d(fit, radius=0.15)
+rglwidget()
 ```
-
-[Demo](https://rstudio-pubs-static.s3.amazonaws.com/284987_78ff71541a2c4026a3c9d346ef6130b8.html)
 
 ---
 

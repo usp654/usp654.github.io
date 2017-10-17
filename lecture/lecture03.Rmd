@@ -153,7 +153,7 @@ ggPredict(fit, interactive=TRUE, colorn=3, colorAsFactor=TRUE)
 
 ---
 
-3D representation of $\text{mpg}_i = \hat{\beta_0} + \hat{\beta_1} \text{wt}_i + \hat{\beta_2} \text{cyl}_i$ 
+3D representation of $\text{mpg}_i = \beta_0 + \beta_1 \text{wt}_i + \beta_2 * \text{cyl}_i + \epsilon_i$
 
 ```{r, warning=FALSE, echo=FALSE, fig.height=6}
 ggPredict3d(fit, radius=0.15)

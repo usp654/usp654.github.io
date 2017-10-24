@@ -274,10 +274,15 @@ The coefficients are the mean differences to the reference category for the corr
 # Testing Differences in Means Among the Included Groups (2)
 
 
+```r
+catod2 &lt;- californiatod %&gt;% mutate(region = relevel(as.factor(region), ref = 4))
+lm(houseval ~ region, data=catod2)  %&gt;% summary
+```
+
 ```
 ## 
 ## Call:
-## lm(formula = houseval ~ region, data = californiatod2)
+## lm(formula = houseval ~ region, data = catod2)
 ## 
 ## Residuals:
 ##     Min      1Q  Median      3Q     Max 
@@ -300,6 +305,14 @@ The coefficients are the mean differences to the reference category for the corr
 ---
 
 # Testing Differences in Means Among the Included Groups (3)
+
+
+```r
+catod2 &lt;- californiatod %&gt;% mutate(LA_SD_region = ifelse(region %in% c(&quot;LA&quot;, &quot;SD&quot;), &quot;LA_SD&quot;, region))
+require(huxtable); huxreg(
+  lm(houseval ~ LA_SD_region, data=catod2),
+  lm(houseval ~ region, data=catod2))
+```
 
 <table class="huxtable" style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
 <col style="width: NA;"><col style="width: NA;"><col style="width: NA;"><tr>
@@ -398,8 +411,8 @@ The coefficients are the mean differences to the reference category for the corr
 
 ```r
 anova(
-  lm(houseval ~ LA_SD_region, data=californiatod2),
-  lm(houseval ~ region, data=californiatod2)
+  lm(houseval ~ LA_SD_region, data=catod2),
+  lm(houseval ~ region, data=catod2)
 )
 ```
 

@@ -252,7 +252,45 @@ mtcars_recoded %&gt;%
 ##      &lt;fctr&gt; &lt;int&gt;
 ## 1 automatic    19
 ## 2    manual    13</code></pre>
-<ol start="2" style="list-style-type: decimal">
+<ol start="3" style="list-style-type: decimal">
+<li>Recode from a numeric/continous variable</li>
+</ol>
+<pre class="r"><code>## Assume we want to combine LA + SD to Southern CA and Bay Area and Sacramento
+## as Northern CA
+(
+californiatod &lt;- californiatod %&gt;% 
+  mutate(transit_level=case_when(
+    transit&gt;0.4~&quot;high&quot;,
+    transit&gt;0.2~&quot;medium&quot;,
+    TRUE ~ &quot;low&quot;
+  ))
+)</code></pre>
+<pre><code>## # A tibble: 26 x 7
+##                                     name   region transit density houseval               railtype transit_level
+##                                    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;                  &lt;chr&gt;         &lt;chr&gt;
+##  1 Archstone Barrington Hills Apartments Bay Area  0.4000    3.36 192593.3 Heavy or commuter rail          high
+##  2                  Archstone Mission Va       SD  0.1077    2.18 203054.6             Light rail           low
+##  3                        Atherton Place Bay Area  0.5000    5.21 217671.5 Heavy or commuter rail          high
+##  4                   Bellamar Apartments       LA  0.3178   10.05 117255.9             Light rail        medium
+##  5                        Coggins Square Bay Area  0.5278    4.68 270554.7 Heavy or commuter rail          high
+##  6                       Del Norte Place Bay Area  0.6429    4.91 229335.6 Heavy or commuter rail          high
+##  7                      Iron Horse Lofts Bay Area  0.6061    4.68 270207.4 Heavy or commuter rail          high
+##  8                    Mercado Apartments       SD  0.0000    3.21 121786.0             Light rail           low
+##  9                         Mission Wells Bay Area  0.1475    3.96 323497.0 Heavy or commuter rail           low
+## 10                  Northpark Apartments Bay Area  0.1738    3.27 667661.0 Heavy or commuter rail           low
+## # ... with 16 more rows</code></pre>
+<pre class="r"><code>## It is generally a good idea to verify your recode afterwards
+californiatod %&gt;% 
+  group_by(transit_level) %&gt;%
+  summarize(min_transit=min(transit), max_transit=max(transit))</code></pre>
+<pre><code>## # A tibble: 3 x 3
+##   transit_level min_transit max_transit
+##           &lt;chr&gt;       &lt;dbl&gt;       &lt;dbl&gt;
+## 1          high        0.40      0.6429
+## 2           low        0.00      0.1892
+## 3        medium        0.21      0.3333</code></pre>
+<pre class="r"><code>## there should be no mis-classification or cross-over</code></pre>
+<ol start="3" style="list-style-type: decimal">
 <li>Combine or split categories</li>
 </ol>
 <pre class="r"><code>## Assume we want to combine LA + SD to Southern CA and Bay Area and Sacramento
@@ -261,19 +299,19 @@ mtcars_recoded %&gt;%
 californiatod &lt;- californiatod %&gt;% 
   mutate(CA=recode(region, &quot;LA&quot;=&quot;Southern&quot;, &quot;SD&quot;=&quot;Southern&quot;, &quot;Bay Area&quot;=&quot;Northern&quot;, &quot;Sacramento&quot;=&quot;Northern&quot;))
 )</code></pre>
-<pre><code>## # A tibble: 26 x 7
-##                                     name   region transit density houseval               railtype       CA
-##                                    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;                  &lt;chr&gt;    &lt;chr&gt;
-##  1 Archstone Barrington Hills Apartments Bay Area  0.4000    3.36 192593.3 Heavy or commuter rail Northern
-##  2                  Archstone Mission Va       SD  0.1077    2.18 203054.6             Light rail Southern
-##  3                        Atherton Place Bay Area  0.5000    5.21 217671.5 Heavy or commuter rail Northern
-##  4                   Bellamar Apartments       LA  0.3178   10.05 117255.9             Light rail Southern
-##  5                        Coggins Square Bay Area  0.5278    4.68 270554.7 Heavy or commuter rail Northern
-##  6                       Del Norte Place Bay Area  0.6429    4.91 229335.6 Heavy or commuter rail Northern
-##  7                      Iron Horse Lofts Bay Area  0.6061    4.68 270207.4 Heavy or commuter rail Northern
-##  8                    Mercado Apartments       SD  0.0000    3.21 121786.0             Light rail Southern
-##  9                         Mission Wells Bay Area  0.1475    3.96 323497.0 Heavy or commuter rail Northern
-## 10                  Northpark Apartments Bay Area  0.1738    3.27 667661.0 Heavy or commuter rail Northern
+<pre><code>## # A tibble: 26 x 8
+##                                     name   region transit density houseval               railtype transit_level       CA
+##                                    &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;                  &lt;chr&gt;         &lt;chr&gt;    &lt;chr&gt;
+##  1 Archstone Barrington Hills Apartments Bay Area  0.4000    3.36 192593.3 Heavy or commuter rail          high Northern
+##  2                  Archstone Mission Va       SD  0.1077    2.18 203054.6             Light rail           low Southern
+##  3                        Atherton Place Bay Area  0.5000    5.21 217671.5 Heavy or commuter rail          high Northern
+##  4                   Bellamar Apartments       LA  0.3178   10.05 117255.9             Light rail        medium Southern
+##  5                        Coggins Square Bay Area  0.5278    4.68 270554.7 Heavy or commuter rail          high Northern
+##  6                       Del Norte Place Bay Area  0.6429    4.91 229335.6 Heavy or commuter rail          high Northern
+##  7                      Iron Horse Lofts Bay Area  0.6061    4.68 270207.4 Heavy or commuter rail          high Northern
+##  8                    Mercado Apartments       SD  0.0000    3.21 121786.0             Light rail           low Southern
+##  9                         Mission Wells Bay Area  0.1475    3.96 323497.0 Heavy or commuter rail           low Northern
+## 10                  Northpark Apartments Bay Area  0.1738    3.27 667661.0 Heavy or commuter rail           low Northern
 ## # ... with 16 more rows</code></pre>
 <pre class="r"><code>## It is generally a good idea to verify your recode afterwards
 californiatod %&gt;% 

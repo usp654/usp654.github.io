@@ -5,6 +5,7 @@ author: "Liming Wang"
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output:
   xaringan::moon_reader:
+    css: "example.css"
     seal: yes
     nature:
       highlightStyle: github
@@ -13,6 +14,7 @@ output:
 ```{r setup, include=F}
 knitr::opts_chunk$set(message=FALSE, warning=F, echo=F)
 options(width = 2000)
+options(repos="https://cran.rstudio.com")
 ```
 
 # Outline
@@ -37,7 +39,7 @@ options(width = 2000)
 
 # Review - 1: Type of variables
 
-![Type of variables](/img/type-of-variables.png)
+![Type of variables](img/type-of-variables.png)
 
 ---
 

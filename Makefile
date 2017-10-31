@@ -10,6 +10,7 @@ push: build
 
 publish: build
 	cd docs && \
+	cp ../static/lecture/img/* lecture/img/ && \
 	git commit -a -m"Updated course webiste" && \
 	git push
 

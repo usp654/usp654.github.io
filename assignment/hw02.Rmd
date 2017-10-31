@@ -45,5 +45,5 @@ huxreg(
     a. Finally, choose one additional variable from the remaining variables of your dataset that interests you. State a hypothesis. Test at least 3 specifications (e.g. linear, dummy variable, nonlinear, transformed variable) with the variable and briefly report on your exercise here (be sure to include regression output, but NOT diagnostics; messy is OK for now). 
     
 1. Similar to HW1, Part 3, CHOOSE ONE of the included articles (Both papers available on D2L), and ONE MODEL in the paper that uses dummy variables and nonlinear variables. Summarize, interpret and critique in no more than a few paragraphs. Include an interpretation of the dummy and nonlinear component(s). Be sure to include questions you have and suggestions for what the authors might have done differently in each case.
-    a. Kakar et al. AirBnB price discrimination in San Francisco
-    a. Chen et al. Impact of light rail on property values
+    a. [Kakar et al. AirBnB price discrimination in San Francisco](https://d2l.pdx.edu/d2l/le/content/667907/viewContent/3159224/View)
+    a. [Chen et al. Impact of light rail on property values](https://d2l.pdx.edu/d2l/le/content/667907/viewContent/3159225/View)

@@ -23,10 +23,10 @@ Please submit your assignment to D2L by 10/23. Feel free to work together, but t
     a. Report the mean & standard deviation of transit usage (`transit` variable) and density. Calculate the Pearson correlation coefficient (`rxy`) between transit usage (`transit` variable) and density. Use any formula that’s convenient, but only use built in functions (e.g. cor() in R or correlations in SPSS) to check your work. Briefly interpret the result, including a supporting plot if you think it helps.
     
     a. Now explain in words and functional formula(e) how you might model the relationship between transit usage and density  as a linear regression model. Be sure to identify and justify your assignment of variables, and explain the assumptions of your population regression function.
+
+    a. Use equations (or matrix algebra, if you must!) to calculate ordinary least squares (OLS) solutions for $\beta_0$ and $\beta_1$ in your regression function (again, you may use built-in functions like lm() to check your work, but obtain the results using simple algebraic functions like sum()). Interpret the values obtained.
     
     a. Calculate the conditional means of Y for each value of X=x in the population. How are these results related to your population regression function?
-    
-    a. Use equations (or matrix algebra, if you must!) to calculate ordinary least squares (OLS) solutions for $\beta_0$ and $\beta_1$ in your regression function (again, you may use built-in functions like lm() to check your work, but obtain the results using simple algebraic functions like sum()). Interpret the values obtained.
     
     a. Plot (R, SPSS, or another method) the following clearly:
     
@@ -47,13 +47,13 @@ Please submit your assignment to D2L by 10/23. Feel free to work together, but t
 	  
 1. Repeat (1) with your own dataset of a random sample. First make it clear whether you are working with a population or a sample. If your dataset is for a population, draw randomly from the population (with `sample_n()` function in R and `Data/Select Cases` in SPSS) to create a random sample of at least 10 observations. For this section, you may use built-in software functions (e.g. cor() and lm() in R, or correlations and regression in SPSS) for each part. No need to write out the equations again. For each sub-question in (1), interpret the results in term of sample regression. For part (e), plot the sample regression lines (SRL) on the plot. In addition to repeating (a)-(h) above, additionally answer the following.
 	
-	  a. Interpret the significance of:
-	     i. the model;
-	     ii. the estimate of $\beta_0$ and $\beta_1$.
+	  i. Interpret the significance of:
+	     - the model;
+	     - the estimate of $\beta_0$ and $\beta_1$.
 	  
-	  a. Construct 95% confidence intervals for each $\beta$ in your SRL estimates. Interpret the range and its statistical meaning.
+	  i. Construct 95% confidence intervals for each $\beta$ in your SRL estimates. Interpret the range and its statistical meaning.
 	  
-	  c. For question 1.i, in addition to describing your hypothesis of effect direction of the new variables, and how you would operationalize the variables (e.g. coding them as dummy variables), run regression models with the two additional variables and conduct hypothesis tests whether the full model with additional variables are statistically better than the restricted model you estimated earlier.
+	  i. For question 1.i, in addition to describing your hypothesis of effect direction of the new variables, and how you would operationalize the variables (e.g. coding them as dummy variables), run regression models with the two additional variables and conduct hypothesis tests whether the full model with additional variables are statistically better than the restricted model you estimated earlier.
 	  
 1. Choose ONE of the articles included in the folder to read. In 2-3 paragraphs, briefly describe the primary research question(s), research hypotheses, and experimental design of the study; then, choose ONE of the presented models and interpret the results. Include in your interpretation discussions of significance and effect size. Also include your own critique in terms of the modeling and interpretation. Make a case for one additional continuous explanatory/control variable and one discrete/dummy variable the authors could perhaps have included. 
 

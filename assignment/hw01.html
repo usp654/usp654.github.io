@@ -135,8 +135,8 @@ $(document).ready(function () {
 <ol style="list-style-type: lower-alpha">
 <li><p>Report the mean &amp; standard deviation of transit usage (<code>transit</code> variable) and density. Calculate the Pearson correlation coefficient (<code>rxy</code>) between transit usage (<code>transit</code> variable) and density. Use any formula that’s convenient, but only use built in functions (e.g. cor() in R or correlations in SPSS) to check your work. Briefly interpret the result, including a supporting plot if you think it helps.</p></li>
 <li><p>Now explain in words and functional formula(e) how you might model the relationship between transit usage and density as a linear regression model. Be sure to identify and justify your assignment of variables, and explain the assumptions of your population regression function.</p></li>
-<li><p>Calculate the conditional means of Y for each value of X=x in the population. How are these results related to your population regression function?</p></li>
 <li><p>Use equations (or matrix algebra, if you must!) to calculate ordinary least squares (OLS) solutions for <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> in your regression function (again, you may use built-in functions like lm() to check your work, but obtain the results using simple algebraic functions like sum()). Interpret the values obtained.</p></li>
+<li><p>Calculate the conditional means of Y for each value of X=x in the population. How are these results related to your population regression function?</p></li>
 <li><p>Plot (R, SPSS, or another method) the following clearly:</p>
 <ul>
 <li>XY scatterplot of the data</li>
@@ -154,12 +154,12 @@ $(document).ready(function () {
 <li><p>Make a case for the inclusion of two additional explanatory/control variables you might include to better explain transit use. Describe your hypothesis of effect direction of the new variables, and how you would operationalize the variables (e.g. coding them as dummy variables).</p></li>
 </ol></li>
 <li><p>Repeat (1) with your own dataset of a random sample. First make it clear whether you are working with a population or a sample. If your dataset is for a population, draw randomly from the population (with <code>sample_n()</code> function in R and <code>Data/Select Cases</code> in SPSS) to create a random sample of at least 10 observations. For this section, you may use built-in software functions (e.g. cor() and lm() in R, or correlations and regression in SPSS) for each part. No need to write out the equations again. For each sub-question in (1), interpret the results in term of sample regression. For part (e), plot the sample regression lines (SRL) on the plot. In addition to repeating (a)-(h) above, additionally answer the following.</p>
-<ol style="list-style-type: lower-alpha">
-<li>Interpret the significance of:
 <ol style="list-style-type: lower-roman">
+<li>Interpret the significance of:
+<ul>
 <li>the model;</li>
 <li>the estimate of <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>.</li>
-</ol></li>
+</ul></li>
 <li><p>Construct 95% confidence intervals for each <span class="math inline">\(\beta\)</span> in your SRL estimates. Interpret the range and its statistical meaning.</p></li>
 <li><p>For question 1.i, in addition to describing your hypothesis of effect direction of the new variables, and how you would operationalize the variables (e.g. coding them as dummy variables), run regression models with the two additional variables and conduct hypothesis tests whether the full model with additional variables are statistically better than the restricted model you estimated earlier.</p></li>
 </ol></li>

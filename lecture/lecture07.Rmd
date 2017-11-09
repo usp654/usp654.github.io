@@ -32,22 +32,49 @@ californiatod <- read_csv("californiatod.csv")
 
 ---
 
-background-image: url("img/Marsden1993_table5.png")
-background-size: 60%
+# Additive vs Interactions (1)
+
+- Variables:
+    - Y: Hours spent on housework chores
+    - D1: Marital Status
+    - D2: Gender
+
+- Additive Model: $Y_i=\beta_0+\beta_1 D_{1i} + \beta_2 D_{2i} + \epsilon_i$
+
+
+Group            | Men (D2=0)         | Women (D2=1)               |
+-----------------|--------------------|----------------------------|
+Unmarried (D1=0) | $=\beta_0$         | $=\beta_0+\beta_2$         |
+Married   (D1=1) | $=\beta_0+\beta_1$ | $=\beta_0+\beta_1+\beta_2$ |
+
+
+
+- Interaction Model: $Y_i=\beta_0+\beta_1 D_{1i} + \beta_2 D_{2i} + \beta_3 D_{1i} D_{2i}+ \epsilon_i$
+
+Group            | Men (D2=0)         | Women (D2=1)                       |
+-----------------|--------------------|------------------------------------|
+Unmarried (D1=0) | $=\beta_0$         | $=\beta_0+\beta_2$                 |
+Married   (D1=1) | $=\beta_0+\beta_1$ | $=\beta_0+\beta_1+\beta_2+\beta_3$ |
 
 ---
 
-# Additive vs Interactions
+# Additive vs Interactions (2)
 
-- D1 Marital status: Unmarried = 0, Married = 1
-- D2 Gender: Men = 0, Women = 1
+```{r, echo=F}
+require(tidyverse)
 
-Group           | $Y_i=\beta_0+\beta_1 D_{1i} + \beta_2 D_{2i} + \epsilon_i$  | $Y_i=\beta_0+\beta_1 D_{1i} + \beta_2 D_{2i} + \beta_3 D_{1i} D_{2i}+ \epsilon_i$ |
-----------------|-------------------------------------------------------------|-----------------------------------------------------------------------------------|
-Unmarried Men   | $= \beta_0$                                                 | $= \beta_0$                                                                       |
-Married Men     | $= \beta_0 + \beta_1$                                       | $= \beta_0 + \beta_1$                                                             |
-Unmarried Women | $= \beta_0 + \beta_2$                                       | $= \beta_0 + \beta_2$                                                             |
-Married Women   | $= \beta_0 + \beta_1 + \beta_2$                             | $= \beta_0 + \beta_1 + \beta_2 + \beta_3$                                         |
+# create an artificial housework chore dataset
+chores <- mtcars %>% select(hours=mpg, married=vs, women=am)
+rownames(chores) <- NULL
+
+lm(hours ~ married * women, data=chores) %>% 
+  summary
+```
+
+---
+
+background-image: url("img/Marsden1993_table5.png")
+background-size: 60%
 
 ---
 
@@ -58,6 +85,8 @@ We can use the same three approaches we introduced in Chapter 7 to calculate the
 - Re-estimating the regression model using different reference categories.
 - Using a general linear F test.
 - Testing the significance of a linear combination of coefficients.
+
+More details in the Lab session
 
 ---
 

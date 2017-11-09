@@ -6,6 +6,8 @@ output: html_document
 
 **Due on 10/23**
 
+[**Solutions**](hw01_solutions.html)
+
 # Correlation and Ordinary Least Squares Regression
 
 Anticipated time to complete: 3-4 hours

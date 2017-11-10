@@ -28,7 +28,7 @@ californiatod <- read_csv("californiatod.csv")
    - Ordinal Categorical Variable
 - Interaction
    - Research questions
-   - 
+   - Interaction terms
    - Simpson's Paradox
 
 ---

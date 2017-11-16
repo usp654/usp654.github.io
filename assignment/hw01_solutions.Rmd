@@ -51,7 +51,7 @@ The transportation planning literature has only documented the relationship betw
 
 >    c. [4 points] Use equations (or matrix algebra, if you must!) to calculate ordinary least squares (OLS) solutions for $\beta_0$ and $\beta_1$ in your regression function (again, you may use built-in functions like lm() to check your work, but obtain the results using simple algebraic functions like sum()). Interpret the values obtained.
 
-The formula for OLS solutions of the coefficients are: $\beta_1 = \frac{ \sum{x_iy_i} - \frac{1}{n}\sum{x_i}\sum{y_i} }{ \sum{x_i^2} - \frac{1}{n}(\sum{x_i})^2 }$ , and $\beta_0 = \overline{y} - \hat{\beta_1}\overline{x}$.
+The formula for OLS solutions of the coefficients are: $\beta_1 = \frac{ \sum{x_iy_i} - \frac{1}{n}\sum{x_i}\sum{y_i} }{ \sum{x_i^2} - \frac{1}{n}(\sum{x_i})^2 }$ , and $\beta_0 = \overline{y} - \beta_1\overline{x}$.
 
 Using R for the calcuation following the formulae:
 ```{r, message=F, warning=F}
@@ -60,7 +60,7 @@ beta1 <- (sum(x*y) - 1/n * sum(x) * sum(y))/(sum(x^2) - 1/n * (sum(x))^2)
 beta0 <- y_bar - beta1 * x_bar
 ```
 
-and we have $\beta_0=$ `r beta0` and $\beta_1=$ `r beta1`$, which gives the same results as `lm(y ~ x)`. Note that since we are running regression with population data, there is no need to denote our coefficient estimates as $\hat{\beta_0}$ and $\hat{\beta_1}$.
+and we have $\beta_0=$ `r beta0` and $\beta_1=$ `r beta1`, which gives the same results as `lm(y ~ x)`. Note that since we are running regression with population data, there is no need to denote our coefficient estimates as $\hat{\beta_0}$ and $\hat{\beta_1}$.
     
 >    d. [4 points] Calculate the conditional means of Y for each value of X=x in the population. How are these results related to your population regression function?
 

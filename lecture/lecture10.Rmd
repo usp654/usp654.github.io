@@ -1,0 +1,35 @@
+---
+title: "USP654: Data Analysis II"
+subtitle: "Indirect Effect; OLS Model Diagnostics"
+author: "Liming Wang"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    seal: yes
+    nature:
+      highlightStyle: github
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(message=FALSE, warning=F, echo=F)
+options(width = 2000)
+options(repos="https://cran.rstudio.com")
+
+require(tidyverse)
+#californiatod <- read_csv("californiatod.csv")
+```
+
+# Outline
+
+- Where to go from here
+    - Advanced topics: HLM, SEM, DCM
+    - Time series models
+- Bayesian Statistics
+- Data Science
+    - Programming
+    - Machine learning
+- Reproducible research
+    
+---
+

@@ -219,8 +219,11 @@ anova(mod1_sea, mod2_sea)
 # when Uber entered Seattle
 
 # NOTE: Data must be in time order!
+require(strucchange)
 df_sea <- df_sea %>% arrange(eventdate)
 sctest(incidents ~ dayofweek + eventdate, type = "Chow", point = 392, data = df_sea)
+
+# To use SPSS for Chow Test: http://www-01.ibm.com/support/docview.wss?uid=swg21476885
 ```
 
 ## DID

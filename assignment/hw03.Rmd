@@ -34,7 +34,7 @@ a.	[Download the data](uber_dui.csv) and [R script HW3Q2.R](HW3Q2.R). Read about
 
 b.	Estimate an initial linear regression of daily incidents on day of the week and general trend over time for each city. Report and interpret the results (keeping in mind that bars typically close after midnight on the following day). Compare the cities as you discuss. 
 
-c. In this step, you’ll test for significant differences in daily DUI patterns versus a null hypothesis that two or more days of the week are equivalent.
+c. [extra credits] In this step, you’ll test for significant differences in daily DUI patterns versus a null hypothesis that two or more days of the week are equivalent.
   
     i. Set up a formal nested model hypothesis test to check whether the Sat and Sun parameters in Seattle are significantly different or can be combined. (R: anova(), SPSS: test outputs of separate regressions). What can you say based on the results?
       
@@ -51,7 +51,7 @@ c. In this step, you’ll test for significant differences in daily DUI patterns
 
 d. I find it useful to run simple, general tests before setting up more complex, specific ones. Run a Chow tests for structural breaks in the Seattle data at Uber launch date (set up formal hypothesis test and interpret)
 
-e. Run and interpret the following intercept dummy variable models for Seattle to test the impact of Uber on DUIs (Use the preferred specification above). Include comparisons of model fit as well as individual parameter interpretations. Be sure to explain potential confounders in this approach.
+e. [extra credits] Run and interpret the following intercept dummy variable models for Seattle to test the impact of Uber on DUIs (Use the preferred specification above). Include comparisons of model fit as well as individual parameter interpretations. Be sure to explain potential confounders in this approach.
 
     i. Post Uber launch effect in Seattle
     

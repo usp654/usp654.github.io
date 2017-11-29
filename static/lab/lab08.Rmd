@@ -1,5 +1,5 @@
 ---
-title: 'USP654 Lab 7: Indirect Effects; Model Diagnostics'
+title: 'USP654 Lab 8: Indirect Effects; Model Diagnostics'
 date: "11/13/2017"
 output: 
   html_document:

@@ -9,7 +9,6 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Liming Wang" />
 
 <meta name="date" content="2017-11-13" />
 
@@ -118,7 +117,6 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">USP654 HW3</h1>
-<h4 class="author"><em>Liming Wang</em></h4>
 <h4 class="date"><em>11/13/2017</em></h4>
 
 </div>
@@ -135,16 +133,16 @@ $(document).ready(function () {
 <li><p>What are your conclusions? Identify a few key findings, and discuss, with reference to the supporting evidence. Can you come up with explanations for the patterns you have found? How could your analysis be improved?</p></li>
 </ol>
 <p>Question 2: Analysis of a quasi-experimental intervention (Adapted from Joseph Broach’s 2016 assignment)</p>
-<p>Uber (a ride-sharing service) launched in Seattle in August, 2011. They claim that on-demand ride sharing can help supplement the public transit and traditional taxi market to provide an alternative to driving under the influence (DUI). Data on driving drunk is not available, but we do have data on drivers pulled over for DUIs. The included dataset uber_dui.csv is compiled with public records from the Seattle and San Francisco city police departments (so does not include DUIs issued by other jurisdictions).</p>
+<p>Uber (a ride-sharing service) launched in Seattle in August 11th, 2011. They claim that on-demand ride sharing can help supplement the public transit and traditional taxi market to provide an alternative to driving under the influence (DUI). Data on driving drunk is not available, but we do have data on drivers pulled over for DUIs. The included dataset uber_dui.csv is compiled with public records from the Seattle and San Francisco city police departments (so does not include DUIs issued by other jurisdictions).</p>
 <p>Uber was operating in San Francisco over the entire data period and has broadly similar characteristics to Seattle, making it a potential quasi-control for external factors that might have been affecting DUI rates in both cities. You will explore the research question of Uber/DUIs and test the specific hypothesis that Uber reduced DUIs in Seattle, controlling for weekly patterns, internal, and external factors that might have been influencing DUI rates over the same period.</p>
 <p>Perform the analysis outlined below, and answer the questions. For full credit, be sure to interpret and speculate, not merely report—I know you can do the latter at this point. As always, points given for creativity and evidence that you’re pushing yourself.</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><a href>Download the data</a> and <a href>R script HW3Q2.r</a>. Read about the variables and data (take a look at the data; be sure it makes sense). Step through the code under item 1, adding your own if desired/required. Create some of the basic plots, descriptive statistics, and any additional variables you added Give a concise overview (~2-3 paragraphs) of the data that includes: trends/patterns/differences observed in each city, potential issues for the analysis, your initial expectations for the primary research question and hypothesis.</p></li>
+<li><p><a href="uber_dui.csv">Download the data</a> and <a href="HW3Q2.R">R script HW3Q2.R</a>. Read about the variables and data (take a look at the data; be sure it makes sense). Step through the code under item 1, adding your own if desired/required. Create some of the basic plots, descriptive statistics, and any additional variables you added Give a concise overview (~2-3 paragraphs) of the data that includes: trends/patterns/differences observed in each city, potential issues for the analysis, your initial expectations for the primary research question and hypothesis.</p></li>
 <li><p>Estimate an initial linear regression of daily incidents on day of the week and general trend over time for each city. Report and interpret the results (keeping in mind that bars typically close after midnight on the following day). Compare the cities as you discuss.</p></li>
-<li><p>In this step, you’ll test for significant differences in daily DUI patterns versus a null hypothesis that two or more days of the week are equivalent.</p>
+<li><p>[extra credits] In this step, you’ll test for significant differences in daily DUI patterns versus a null hypothesis that two or more days of the week are equivalent.</p>
 <ol style="list-style-type: lower-roman">
-<li><pre><code>Set up a formal nested model hypothesis test to check whether the Sat and Sun parameters in Seattle are significantly different or can be combined. (R: anova(), SPSS: Calculate based on output of separate regressions). What can you say based on the results?</code></pre></li>
-<li><pre><code>Test and report on the following (but without setting up the formal hypothesis tests; be sure to use the preferred model as the tests progress)</code></pre></li>
+<li><p>Set up a formal nested model hypothesis test to check whether the Sat and Sun parameters in Seattle are significantly different or can be combined. (R: anova(), SPSS: test outputs of separate regressions). What can you say based on the results?</p></li>
+<li><p>Test and report on the following (but without setting up the formal hypothesis tests; be sure to use the preferred model as the tests progress)</p></li>
 </ol>
 <ul>
 <li>Sat v. Sun – SF</li>
@@ -153,19 +151,19 @@ $(document).ready(function () {
 <li>Tue/Wed/Thu vs Monday - SF</li>
 </ul>
 <ol style="list-style-type: lower-roman">
-<li><pre><code>Briefly compare the day-to-day patterns of Sea &amp; SF. How does the comparison affect your opinion that SF is a suitable quasi-control city?</code></pre></li>
-<li><pre><code>Explain briefly from a sample/population perspective why we would omit variables or constrain parameters to be equal if we fail to reject the null hypotheses above.</code></pre></li>
+<li><p>Briefly compare the day-to-day patterns of Sea &amp; SF. How does the comparison affect your opinion that SF is a suitable quasi-control city?</p></li>
+<li><p>Explain briefly from a sample/population perspective why we would omit variables or constrain parameters to be equal if we fail to reject the null hypotheses above.</p></li>
 </ol></li>
 <li><p>I find it useful to run simple, general tests before setting up more complex, specific ones. Run a Chow tests for structural breaks in the Seattle data at Uber launch date (set up formal hypothesis test and interpret)</p></li>
-<li><p>Run and interpret the following intercept dummy variable models for Seattle to test the impact of Uber on DUIs (Use the preferred specification). Include comparisons of model fit as well as individual parameter interpretations. Be sure to explain potential confounders in this approach.</p>
+<li><p>[extra credits] Run and interpret the following intercept dummy variable models for Seattle to test the impact of Uber on DUIs (Use the preferred specification above). Include comparisons of model fit as well as individual parameter interpretations. Be sure to explain potential confounders in this approach.</p>
 <ol style="list-style-type: lower-roman">
 <li><p>Post Uber launch effect in Seattle</p></li>
 <li><p>If you had no other control data, what would you conclude based on our research hypothesis? What are the limitations of this finding due to the modeling approach?</p></li>
 </ol></li>
 <li>Finally, specify a difference-in-difference model using the combined Seattle and San Francisco data.
 <ol style="list-style-type: lower-roman">
-<li><p>Fully interpret the base model specification provided in the R code according to 654 custom. Be sure to carefully distinguish between cities, and feel free to use examples (e.g. predicted values) or plots to help illustrate your points.</p></li>
-<li><p>Alter the base model to incorporate a difference-in-difference (post*treatment) effect. Discuss the results, being sure to clearly explain the various pathways by which time and Uber are affecting Seattle DUI rate changes.</p></li>
+<li><p>Fully interpret the base model specification provided in the R code. Be sure to carefully distinguish between cities, and feel free to use examples (e.g. predicted values) or plots to help illustrate your points.</p></li>
+<li><p>Alter the base model to incorporate a difference-in-difference (Seattle * treatment) effect. Discuss the results; be sure to clearly explain the various pathways by which time and Uber are affecting Seattle DUI rate changes.</p></li>
 <li><p>Perform a qualitative graphical test of linear regression assumptions. Be sure to discuss linearity, normality, homoscedasticity, and influential observations. Include the plots here.</p></li>
 </ol></li>
 <li><p>In 2-3 paragraphs, summarize your results. Make sure to wrap your own narrative around the statistical results. You might discuss: are the results conclusive? How do they match your expectations? What have we learned? What are the limitations to the findings? What would your next steps involve (data and modeling)? Be sure to provide a summary of the range of effect size and significance of Uber on DUI rates in Seattle. Also include other interesting findings you made along the way.</p></li>

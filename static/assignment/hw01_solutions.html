@@ -192,12 +192,12 @@ tribble(
 <li>[4 points] Use equations (or matrix algebra, if you must!) to calculate ordinary least squares (OLS) solutions for <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> in your regression function (again, you may use built-in functions like lm() to check your work, but obtain the results using simple algebraic functions like sum()). Interpret the values obtained.</li>
 </ol>
 </blockquote>
-<p>The formula for OLS solutions of the coefficients are: <span class="math inline">\(\beta_1 = \frac{ \sum{x_iy_i} - \frac{1}{n}\sum{x_i}\sum{y_i} }{ \sum{x_i^2} - \frac{1}{n}(\sum{x_i})^2 }\)</span> , and <span class="math inline">\(\beta_0 = \overline{y} - \hat{\beta_1}\overline{x}\)</span>.</p>
+<p>The formula for OLS solutions of the coefficients are: <span class="math inline">\(\beta_1 = \frac{ \sum{x_iy_i} - \frac{1}{n}\sum{x_i}\sum{y_i} }{ \sum{x_i^2} - \frac{1}{n}(\sum{x_i})^2 }\)</span> , and <span class="math inline">\(\beta_0 = \overline{y} - \beta_1\overline{x}\)</span>.</p>
 <p>Using R for the calcuation following the formulae:</p>
 <pre class="r"><code>n &lt;- length(y)
 beta1 &lt;- (sum(x*y) - 1/n * sum(x) * sum(y))/(sum(x^2) - 1/n * (sum(x))^2)
 beta0 &lt;- y_bar - beta1 * x_bar</code></pre>
-<p>and we have <span class="math inline">\(\beta_0=\)</span> 0.24 and <span class="math inline">\(\beta_1=\)</span> 0$, which gives the same results as <code>lm(y ~ x)</code>. Note that since we are running regression with population data, there is no need to denote our coefficient estimates as <span class="math inline">\(\hat{\beta_0}\)</span> and <span class="math inline">\(\hat{\beta_1}\)</span>.</p>
+<p>and we have <span class="math inline">\(\beta_0=\)</span> 0.24 and <span class="math inline">\(\beta_1=\)</span> 0, which gives the same results as <code>lm(y ~ x)</code>. Note that since we are running regression with population data, there is no need to denote our coefficient estimates as <span class="math inline">\(\hat{\beta_0}\)</span> and <span class="math inline">\(\hat{\beta_1}\)</span>.</p>
 <blockquote>
 <ol start="4" style="list-style-type: lower-alpha">
 <li>[4 points] Calculate the conditional means of Y for each value of X=x in the population. How are these results related to your population regression function?</li>

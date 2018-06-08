@@ -44,7 +44,7 @@ lessons:
     assignment: ""
     reading: "reading07.html"
     lecture: "lecture07.html"
-    lab: "lecture07.html"
+    lab: "lab07.html"
   - title: "DEADLINE: Project update"
     date: "11/13"
   - title: "Outliers, Heteroskedasticity, and Multicollinearity"

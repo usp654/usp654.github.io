@@ -1,6 +1,6 @@
 ---
 title: "Policies"
-date: "2017-04-13T00:00:00"
+date: "2020-09-28T00:00:00"
 markup: "mmark"
 ---
 
@@ -16,8 +16,7 @@ markup: "mmark"
 ###	Notes
 
 1. If my office hours conflict with your schedule, [send me a Google calendar invite for an appointment](https://docs.google.com/document/d/1bzErTafR_yILhhwW-1jax_0XiHZZE-HU-tT40Ur0blQ/edit).
-1. Submit in your homework assignments to [D2L/Assignments](https://d2l.pdx.edu/d2l/lms/dropbox/user/folders_list.d2l?isprv=1&bp=1&ou=667907). 
-1. Extensions on homework due dates will only be granted in exceptional circumstances and only if I am contacted before the due date.
+1. Submit in your homework assignments to [D2L/Assignments](https://d2l.pdx.edu/d2l/lms/dropbox/user/folders_list.d2l?ou=822118&isprv=0). 
 1. Academic dishonesty will result in a score of zero for the assignment in question. 
 1. Please be aware of the University’s policies on withdrawals and incompletes:
     - Withdrawals: https://www.pdx.edu/registration/withdraw-cancellation-and-drops

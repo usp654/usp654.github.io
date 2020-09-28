@@ -1,6 +1,6 @@
-# usp654-f17
+# usp654
 
-Source code for course website for USP654 at Portland State University, Fall 2017.
+Source code for course website for USP654 at Portland State University, Fall 2020.
 
 Course website is at https://usp654.github.io
 

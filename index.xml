@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Analysis II on USP 654 Fall 2020</title>
+    <link>/</link>
+    <description>Recent content in Data Analysis II on USP 654 Fall 2020</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Policies</title>
+      <link>/policies/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/policies/</guid>
+      <description>Grading: 3 homework assignments and the class project+paper will make up your entire grade in the course. I use these grading cutoffs:
+ A=90% B=80% C=70% D=60% F&amp;lt;60%  Notes  If my office hours conflict with your schedule, send me a Google calendar invite for an appointment. Submit in your homework assignments to D2L/Assignments. Academic dishonesty will result in a score of zero for the assignment in question. Please be aware of the University’s policies on withdrawals and incompletes:  Withdrawals: https://www.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/syllabus/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/syllabus/</guid>
+      <description>Note:The schedule of topics and assignments might be subject to change.
+&amp;lt;tr&amp;gt; &amp;lt;td align=&amp;quot;right&amp;quot;&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Part 1: Introduction &amp;amp;amp; Data Analysis Workflow&amp;lt;/td&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;f1f1f1&amp;quot;&amp;gt; &amp;lt;i class=&amp;quot;fa fa-book fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;f1f1f1&amp;quot;&amp;gt; &amp;lt;i class=&amp;quot;fa fa-keyboard-o fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;f1f1f1&amp;quot;&amp;gt; &amp;lt;i class=&amp;quot;fa fa-file-image-o fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;f1f1f1&amp;quot;&amp;gt; &amp;lt;i class=&amp;quot;fa fa-check-circle fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td align=&amp;quot;right&amp;quot;&amp;gt;09/28&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;Introduction and Data Analysis Workflow&amp;lt;/td&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;https://d2l.pdx.edu/d2l/le/content/667907/Home&amp;quot;&amp;gt; &amp;lt;i class=&amp;quot;fa fa-book fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;font color=&amp;quot;f1f1f1&amp;quot;&amp;gt; &amp;lt;i class=&amp;quot;fa fa-keyboard-o fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td align=&amp;quot;center&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;/lecture/lecture01.</description>
+    </item>
+    
+    <item>
+      <title>Tools &amp; Datasets</title>
+      <link>/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tools/</guid>
+      <description>Tools R + RStudio R is the statistical programming language we will use in this class. We will interface with R using RStudio, a fully feautred Integrated Development Environment (IDE). Installing them on your own computer should be straightforward. If you already have them installed on your computer, I recommend you check the version and upgrade them to the latest version. Ask me for help if you have any problem installing them.</description>
+    </item>
+    
+  </channel>
+</rss>

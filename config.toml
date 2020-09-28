@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "USP 654 Fall 2017"
+title = "USP 654 Fall 2020"
 theme = "material"
 #disqusShortname = ""
 # googleAnalytics = ""
@@ -22,7 +22,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [author]
   name = "Liming Wang"
   bio = ""
-  job = "Assistant Professor"
+  job = "Associate Professor"
   location = "Portland State University"
   gravatarEmail = "lmwang@pdx.edu"
   # Your profile picture
@@ -63,16 +63,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   url = "http://d2l.pdx.edu/"
 [[menu.footer]]
   weight = 2
-  identifier = "DataCamp"
+  identifier = "DataQuest"
   name = "DataCamp"
   pre = "<i class=\"button-icon fa fa-2x fa-pencil\"></i>"
-  url = "https://www.datacamp.com/groups/usp654"
+  url = "https://www.dataquest.io/"
 [[menu.footer]]
   weight = 3
   identifier = "Slack"
   name = "Slack"
   pre = "<i class=\"button-icon fa fa-2x fa-slack\"></i>"
-  url = "https://usp634-f17.slack.com/messages"
+  url = "https://join.slack.com/t/newworkspace-2ju9356/shared_invite/zt-hruybynn-DSSXisjEO3U_UlkErmIk~g"
 [[menu.footer]]
   weight = 4
   identifier = "GitHub"
